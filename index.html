@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">	
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Navigatia-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+          <!-- Navbar brand -->
+          <a class="navbar-brand navbar-brand-padding" href="#">Room Booking</a>
+
+          <!-- Collapse button -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+            aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Collapsible content -->
+          <div class="collapse navbar-collapse" id="basicExampleNav">
+
+            <!-- Links -->
+            <ul class="navbar-nav mr-auto">
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#">Calendar</a>
+              </li>
+             
+              <!-- Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">Admin</a>
+                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Users</a>
+                  <a class="dropdown-item" href="#">Rooms</a>
+                </div>
+              </li>
+
+            </ul>
+            
+          </div>
+          <!-- Collapsible content -->
+
+        </nav>
+        <!--/.Navbar-->
+
+        <!--Main page content-->
+        <div class="container">
+            <!--Navbar-->
+            <div class="jumbotron my-jumbotron" id="jumbotron-one">
+              <h2 class="my-h2">Room Booking system</h2>
+              <br/>
+              <h4 class = "my-h4">The following meetings are taking place on:</h4>
+              <!--Calendar-->
+              <input type="date" id="booking-date" name="booking-date">       
+              <br/>
+              <div class="button-one">
+                <button type="button" class="btn btn-outline-primary btn-color">New Booking</button>
+              </div>      
+            </div>
+            <div class="jumbotron my-jumbotron" id="jumbotron-two">
+                <div class="container">
+                    <div class="row row-striped">
+                        <div class="col-2 text-right">
+                            <h1 class="display-4"><span class="badge badge-secondary">23</span></h1>
+                            <h2>OCT</h2>
+                        </div>
+                        <div class="col-8">
+                            <h3 class="text-uppercase"><strong>Ice Cream Social</strong></h3>
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><i class="fa fa-calendar-o" aria-hidden="true"></i> Monday</li>
+                                <li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i> 12:30 PM - 2:00 PM</li>
+                                <li class="list-inline-item"><i class="fa fa-location-arrow" aria-hidden="true"></i> Cafe</li>
+                            </ul>
+                            <p>Lorem ipsum dolsit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="col-2">
+                            <button type="button" class="btn btn-outline-primary btn-color custom">Amend</button>     
+                            <button type="button" class="btn btn-warning custom">Cancel</button>                        
+                        </div>
+                    </div>
+                    <div class="row row-striped">
+                        <div class="col-2 text-right">
+                            <h1 class="display-4"><span class="badge badge-secondary">27</span></h1>
+                            <h2>OCT</h2>
+                        </div>
+                        <div class="col-8">
+                            <h3 class="text-uppercase"><strong>Operations Meeting</strong></h3>
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><i class="fa fa-calendar-o" aria-hidden="true"></i> Friday</li>
+                                <li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i> 2:30 PM - 4:00 PM</li>
+                                <li class="list-inline-item"><i class="fa fa-location-arrow" aria-hidden="true"></i> Room 4019</li>
+                            </ul>
+                            <p>Lorem ipsum dolsit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="col-2">
+                            <button type="button" class="btn btn-outline-primary btn-color custom">Amend</button>     
+                            <button type="button" class="btn btn-warning custom">Cancel</button>                        
+                        </div>
+                    </div>
+	           </div>
+            </div>
+        </div>
+    
+</body>
+</html>

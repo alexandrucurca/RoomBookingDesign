@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">	
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../../style.css">    
+</head>
+<body>
+    <div class="container">
+            <!--Navbar-->
+            <div class="jumbotron my-jumbotron" id="jumbotron-two">
+              <h2 class="my-h2">Add/Edit User</h2>
+              
+                <form>
+                  <div class="row">
+                      <div class="col-6 form-group">
+                        <label for="Name">Name</label>
+                        <input type="text" class="form-control" id="name">
+                      </div>
+                      <div class="col-6 form-group">
+                        <label for="location">Username</label>
+                        <input type="text" class="form-control" id="location">
+                      </div>
+                </div>
+                <div class="row">
+                      <div class="col-6 form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password">
+                      </div>
+                      <div class="col-6 form-group">
+                        <label for="password-rep">Confirm password</label>
+                        <input type="password" class="form-control" id="password-rep">
+                      </div>
+                </div>
+                <div class="checkbox">
+                    <label for="admin">Admin?</label>
+                    <input type="checkbox" id="admin">
+                </div>
+                    <button class="btn btn-outline-primary btn-color">Submit</button>
+                </form>
+            </div>
+    </div>
+</body>
